@@ -54,11 +54,10 @@ class SchoolTest < Minitest::Test
   end
 
   def test_it_can_sort_all_students
-    skip
     @school.add_course(@course1)
     @school.add_course(@course2)
     @school.add_course(@course3)
-    
+
     @school.sort_students
 
     students = [
@@ -77,11 +76,10 @@ class SchoolTest < Minitest::Test
   end
 
   def test_it_can_list_all_students_by_name
-    skip
     @school.add_course(@course1)
     @school.add_course(@course2)
     @school.add_course(@course3)
-    
+
     expected = [
       'Malfoy',
       'Ron',
@@ -96,7 +94,6 @@ class SchoolTest < Minitest::Test
   end
 
   def test_it_can_list_all_students_by_house
-    skip
     @school.add_course(@course1)
     @school.add_course(@course2)
     @school.add_course(@course3)
